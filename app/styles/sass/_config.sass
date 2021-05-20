@@ -1,0 +1,80 @@
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// USER VARIABLES SECTION
+
+$accent: orange // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #333 // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: roboto-oh5, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$nurito: "Nunito", sans-serif
+
+// Set your brand colors
+$indigo: #4C0082
+$white: #FFF
+
+// Bulma global variables
+$family-sans-serif: $userfont
+$primary: $indigo
+
+// Bulma component variables
+$body-background-color: $white
+$control-border-width: 2px
+$input-border-color: transparent
+$input-shadow: none
+
+// Bulma
+@import "../../../node_modules/bulma/sass/utilities/_all.sass"
+@import "../../../node_modules/bulma/sass/base/_all.sass"
+@import "../../../node_modules/bulma/sass/elements/_all.sass"
+@import "../../../node_modules/bulma/sass/form/_all.sass"
+@import "../../../node_modules/bulma/sass/components/navbar.sass"
+@import "../../../node_modules/bulma/sass/layout/hero.sass"
+@import "../../../node_modules/bulma/sass/layout/section.sass"
+@import "../../../node_modules/bulma/sass/layout/footer.sass"
+@import "../../../node_modules/bulma/sass/helpers/color.sass"
+@import "../../../node_modules/bulma/sass/helpers/typography.sass"
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
+@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
+@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
+@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	display: flex
+ min-height: 100vh
+ flex-direction: column
