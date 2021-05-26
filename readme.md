@@ -1,9 +1,11 @@
 <h1>Get started quickly with Bulma using Gulp</h1>
 <p>Based on <a href="https://github.com/agragregra/OptimizedHTML-5" title="OptimizedHTML 5 template" target="_blank">OptimizedHTML 5 template</a>.</p>
 <h2>Using:</h2>
-1. Clone or Download Starter from GitHub
-2. Install Node Modules: <code>npm i</code>
-3. Run: <code>gulp</code>
+<ul>
+	<li>1. Clone or <a href="https://github.com/Ivanitch/bulma-gulp/archive/refs/heads/master.zip" title="Download Starter">Download</a> Starter from GitHub</li>
+	<li>2. Install Node Modules: <code>npm i</code></li>
+	<li>3. Run: <code>gulp</code></li>
+</ul>
 <h2>Gulp tasks:</h2>
 <ul>
 	<li><strong>gulp</strong>: run default gulp task (scripts, images, styles, browsersync, startwatch)</li>
