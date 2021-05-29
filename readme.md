@@ -15,6 +15,7 @@
 </ul>
 <h2>Included features:</h2>
 <p><a href="https://bulma.io/" target="_blank">Bulma</a></p>
+<p><a href="https://fontawesome.com/" target="_blank">Font Awesome 5</a></p>
 <h2>Helpers</h2>
 
 <h3>Fonts</h3>
